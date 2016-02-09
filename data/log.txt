@@ -1,0 +1,254 @@
+loading data . . . 2 KB matrix, 96 bytes labels done 0 seconds
+
+crossassociation search . . .
+	old cost = 510.112
+		adding cluster in way 0 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 504.025
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 504.025
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 504.025
+		time = 2 seconds
+		accepted
+		adding cluster in way 1 . . .
+		time = 1 seconds
+		regroup . . .
+			old cost = 504.025
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 1 seconds
+			new cost = 504.025
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 504.025
+		time = 2 seconds
+		rejected
+		adding cluster in way 2 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 512.559
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 507.052
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 1 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 507.052
+		time = 2 seconds
+		rejected
+	new cost = 504.025
+	time = 7 seconds
+		adding cluster in way 0 . . .
+		time = 1 seconds
+		regroup . . .
+			old cost = 504.025
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 504.025
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 1 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 504.025
+		time = 2 seconds
+		rejected
+		adding cluster in way 1 . . .
+		time = 1 seconds
+		regroup . . .
+			old cost = 495.886
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 495.886
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 495.886
+		time = 2 seconds
+		accepted
+		adding cluster in way 2 . . .
+		time = 1 seconds
+		regroup . . .
+			old cost = 332.703
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 332.703
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 1 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 332.703
+		time = 2 seconds
+		accepted
+	new cost = 332.703
+	time = 9 seconds
+		adding cluster in way 0 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 343.385
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 332.703
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 332.703
+		time = 2 seconds
+		rejected
+		adding cluster in way 1 . . .
+		time = 1 seconds
+		regroup . . .
+			old cost = 51.5907
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+		time = 3 seconds
+		accepted
+		adding cluster in way 2 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 332.703
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 332.703
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 332.703
+		time = 2 seconds
+		rejected
+	new cost = 51.5907
+	time = 8 seconds
+		adding cluster in way 0 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 51.5907
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+		time = 3 seconds
+		rejected
+		adding cluster in way 1 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 51.5907
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+			optimize way 0 . . .
+			time = 0 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+		time = 3 seconds
+		rejected
+		adding cluster in way 2 . . .
+		time = 0 seconds
+		regroup . . .
+			old cost = 51.5907
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+			optimize way 0 . . .
+			time = 1 seconds
+			optimize way 1 . . .
+			time = 0 seconds
+			optimize way 2 . . .
+			time = 0 seconds
+			new cost = 51.5907
+		time = 2 seconds
+		rejected
+	new cost = 51.5907
+	time = 8 seconds
+cost = 51.5907
+time = 35 seconds
