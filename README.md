@@ -24,6 +24,7 @@ locally and having to get the data remotely.
 type at command line: ./main dir
 
 main: the name of the executable
+
 dir: the folder (absolute) where the input data resides
 
 To quit: press 'esc' key
