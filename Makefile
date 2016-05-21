@@ -1,34 +1,66 @@
-PROJECT     := $(shell basename $(CURDIR))
-SRCDIR      := src
-BUILDDIR    := build
-TARGET      := bin/$(PROJECT)
-INFO        := $(PROJECT)
+################################################################################
+## variables
+################################################################################
 
-SOURCES     := $(wildcard $(SRCDIR)/*.cpp)
-OBJECTS     := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.cpp=.o))
+# explicitly defines to avoid confusion if inherited from environment
+SHELL         := /bin/sh
 
-CC          := g++
-CFLAGS      := -std=gnu++11 -Wall
+# defines the chraracter that deonte the start of a recipie line
+.RECIPEPREFIX := \t
 
-LIB         :=
-INC         := -I include
+PROJECT       := $(shell basename $(CURDIR))
+GOAL          := bin/$(PROJECT)
 
-$(TARGET): $(OBJECTS)
-	@echo " Linking..."
-	$(CC) $^ -o $(TARGET) $(LIB)
+SRCDIR        := src
+BLDDIR        := build
+DEPDIR        := .d
 
-$(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
-	@echo " Compiling..."
-	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+SRC           := $(wildcard $(SRCDIR)/*.cpp)
+OBJ           := $(patsubst $(SRCDIR)/%,$(BLDDIR)/%,$(SRC:.cpp=.o))
+DEP           := $(patsubst $(SRCDIR)/%,$(DEPDIR)/%,$(SRC:.cpp=.d))
+
+CPP           := g++
+
+DEPFLAGS       = -MT $@ -MMD -MP -MF $(DEPDIR)/$*.Td
+WFLAGS        := -W -Wall -Wextra -Werror -Wfatal-errors
+CPPFLAGS      := -O3 -ansi -std=gnu++11
+INC           := -I include
+
+Compile        = $(CPP) $(DEPFLAGS) $(CPPFLAGS) $(INC) -c
+Link           = $(CPP) $(LDFLAGS) $(LDLIBS)
+OUTPUT_OPTION  = -o $@
+POSTCOMPILE    = mv -f $(DEPDIR)/$*.Td $(DEPDIR)/$*.d
+
+################################################################################
+## rules
+################################################################################
+
+$(GOAL): $(OBJ)
+	@echo "Linking..."
+	$(Link) $(OUTPUT_OPTION) $^
+
+$(BLDDIR)/%.o: $(SRCDIR)/%.cpp $(DEPDIR)/%.d | $(DEPDIR)
+	@echo "Compiling..."
+	$(Compile) $(OUTPUT_OPTION) $<
+	$(POSTCOMPILE)
+
+$(DEPDIR):
+	@mkdir $@
+
+$(DEPDIR)/%.d: ;
+
+.PRECIOUS: $(DEPDIR)/%.d
+
+-include $(DEP)
+
+.PHONY: clean test info
 
 clean:
 	@echo " Cleaning..."
-	$(RM) $(BUILDDIR)/* $(TARGET)
+	rm -f $(BLDDIR)/* $(DEPDIR)/* $(GOAL)
 
 tests:
-	$(CC) $(CFLAGS) test/tester.cpp $(INC) $(LIB) -o bin/tester
+	$(CC) $(CPPFLAGS) test/tester.cpp $(INC) $(LIB) -o bin/tester
 
 info:
-	@echo $(PROJECT)
-
-.PHONY: clean test info
+	$(CPP) $(CPPFLAGS) -dM -E - < /dev/null

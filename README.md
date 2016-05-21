@@ -23,7 +23,7 @@ locally and having to get the data remotely.
 ### Installation
 
 ```sh
-$ git clone <git-repo-url>
+$ git clone git@github.com:jcasse/blockmodel-visualization.git
 $ cd blockmodel-visualization
 $ make
 ```
