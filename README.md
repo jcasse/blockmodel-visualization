@@ -41,7 +41,7 @@ main ~/Research/datasets/multi/binary_3d/multi-clustering/multi-clustering_20120
 License
 ----
 
-[//]: # (A short snippet describing the license (MIT, Apache, etc.))
+[//]: # "A short snippet describing the license (MIT, Apache, etc.)"
 
 [//]: # (http://choosealicense.com/)
 
